@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Emporium | Timeless Elegance & Modern Finds</title>
+    <title>Emporium | Holiday Edit • Red & Green Collection</title>
     <!-- Google Fonts & Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,30 +17,32 @@
         body {
             background: #fefaf5;
             font-family: 'Inter', sans-serif;
-            color: #2c2418;
+            color: #1e2a1a;
             scroll-behavior: smooth;
         }
 
-        /* warm traditional palette */
+        /* RED & GREEN THEME — Festive, bold, elegant */
         :root {
-            --cream: #fef8ed;
-            --deep-wood: #3e2c1f;
-            --gold-accent: #c9a87b;
-            --rose-dust: #e2cfb3;
-            --charcoal: #2a241e;
-            --border-light: #f0e4d4;
+            --holiday-red: #b63a2c;
+            --deep-red: #8b2c1e;
+            --soft-red-glow: #fbe9e6;
+            --evergreen: #1e4620;
+            --forest-green: #2f5e2c;
+            --sage-light: #e2f0df;
+            --gold-accent: #d4af37;
+            --cream-paper: #fff9ef;
+            --charcoal-soft: #2c2a24;
+            --border-light: #e2dcd0;
             --shadow-sm: 0 12px 28px -8px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.02);
-            --shadow-hover: 0 24px 40px -12px rgba(0, 0, 0, 0.12);
+            --shadow-hover: 0 24px 40px -12px rgba(0, 0, 0, 0.15);
         }
 
-        /* container */
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 28px;
         }
 
-        /* typography */
         h1, h2, h3, .logo, .serif {
             font-family: 'Playfair Display', serif;
         }
@@ -51,6 +53,7 @@
             letter-spacing: -0.01em;
             position: relative;
             display: inline-block;
+            color: var(--evergreen);
         }
 
         .section-head {
@@ -59,27 +62,27 @@
         }
 
         .section-head p {
-            color: #7f6b58;
+            color: #5f5b4b;
             font-size: 1rem;
             margin-top: 0.5rem;
-            letter-spacing: 0.3px;
         }
 
         .divider {
             width: 70px;
             height: 2px;
-            background: var(--gold-accent);
+            background: var(--holiday-red);
             margin: 0.8rem auto 0;
         }
 
-        /* header / navigation */
+        /* Top bar & header */
         .top-bar {
-            background: var(--deep-wood);
-            color: #f7ede3;
+            background: var(--evergreen);
+            color: #fdf7e0;
             font-size: 0.8rem;
             padding: 8px 0;
             text-align: center;
-            letter-spacing: 0.4px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
         }
 
         header {
@@ -88,7 +91,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            border-bottom: 1px solid var(--border-light);
+            border-bottom: 1px solid #e9ded2;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.02);
         }
 
@@ -104,13 +107,13 @@
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--deep-wood);
+            color: var(--evergreen);
             letter-spacing: -0.3px;
         }
 
         .logo span {
-            color: var(--gold-accent);
-            font-weight: 500;
+            color: var(--holiday-red);
+            font-weight: 600;
         }
 
         .nav-links {
@@ -122,13 +125,13 @@
         .nav-links a {
             text-decoration: none;
             font-weight: 500;
-            color: #3a2a1f;
+            color: #2a3a1f;
             transition: 0.2s;
             font-size: 0.95rem;
         }
 
         .nav-links a:hover {
-            color: var(--gold-accent);
+            color: var(--holiday-red);
         }
 
         .header-actions {
@@ -142,8 +145,12 @@
             border: none;
             font-size: 1.2rem;
             cursor: pointer;
-            color: #3e2c1f;
+            color: var(--evergreen);
             transition: 0.2s;
+        }
+
+        .icon-btn:hover {
+            color: var(--holiday-red);
         }
 
         .cart-icon {
@@ -154,8 +161,8 @@
             position: absolute;
             top: -8px;
             right: -12px;
-            background: var(--gold-accent);
-            color: #2c1c0e;
+            background: var(--holiday-red);
+            color: white;
             font-size: 0.7rem;
             font-weight: bold;
             width: 18px;
@@ -172,11 +179,12 @@
             border: none;
             font-size: 1.6rem;
             cursor: pointer;
+            color: var(--evergreen);
         }
 
-        /* Hero with traditional atmosphere */
+        /* Hero — red & green blend */
         .hero {
-            background: linear-gradient(107deg, #f9efdf 0%, #f4e5d3 100%);
+            background: linear-gradient(115deg, #f4ede1 0%, #e8f0e3 100%);
             border-radius: 0 0 48px 48px;
             margin-bottom: 2rem;
             overflow: hidden;
@@ -197,26 +205,27 @@
 
         .hero-badge {
             display: inline-block;
-            background: #e9dccc;
-            color: #7a5a3a;
+            background: var(--holiday-red);
+            color: white;
             padding: 4px 14px;
             border-radius: 60px;
             font-size: 0.75rem;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 0.5px;
             margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         }
 
         .hero-content h1 {
             font-size: 3.3rem;
             line-height: 1.2;
             margin-bottom: 20px;
-            color: #2c2418;
+            color: var(--evergreen);
         }
 
         .hero-content p {
             font-size: 1rem;
-            color: #5b4b38;
+            color: #4a5a3a;
             max-width: 480px;
             margin-bottom: 32px;
         }
@@ -228,7 +237,7 @@
         }
 
         .btn-primary {
-            background: var(--deep-wood);
+            background: var(--evergreen);
             color: white;
             border: none;
             padding: 12px 28px;
@@ -241,38 +250,34 @@
         }
 
         .btn-primary:hover {
-            background: #5b3e2a;
+            background: var(--forest-green);
             transform: translateY(-2px);
         }
 
         .btn-outline {
             background: transparent;
-            border: 1px solid #cbb286;
+            border: 1px solid var(--holiday-red);
+            color: var(--holiday-red);
             padding: 12px 28px;
             border-radius: 40px;
-            font-weight: 500;
+            font-weight: 600;
             cursor: pointer;
             transition: 0.2s;
         }
 
         .btn-outline:hover {
-            background: rgba(201, 168, 123, 0.1);
-            border-color: #b38f60;
-        }
-
-        .hero-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
+            background: rgba(182, 58, 44, 0.08);
+            border-color: var(--deep-red);
         }
 
         .hero-image img {
             max-width: 100%;
             border-radius: 32px;
             box-shadow: 0 20px 35px -10px rgba(0,0,0,0.15);
+            border: 2px solid rgba(212, 175, 55, 0.3);
         }
 
-        /* categories masonry style */
+        /* categories cards */
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
@@ -287,28 +292,29 @@
             border-radius: 28px;
             box-shadow: var(--shadow-sm);
             transition: all 0.25s ease;
-            border: 1px solid #f3e9df;
+            border: 1px solid #ecdfcf;
             cursor: pointer;
         }
 
         .cat-card i {
             font-size: 2.2rem;
-            color: var(--gold-accent);
+            color: var(--holiday-red);
             margin-bottom: 12px;
         }
 
         .cat-card h4 {
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 5px;
+            color: var(--evergreen);
         }
 
         .cat-card:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-hover);
-            border-color: #e2cfb3;
+            border-color: var(--gold-accent);
         }
 
-        /* product grid */
+        /* product cards */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -322,7 +328,7 @@
             overflow: hidden;
             transition: all 0.25s;
             box-shadow: var(--shadow-sm);
-            border: 1px solid #f3e9df;
+            border: 1px solid #eddfd2;
         }
 
         .product-card:hover {
@@ -345,13 +351,15 @@
             font-weight: 700;
             font-size: 1.05rem;
             margin-bottom: 8px;
+            color: #1f2e18;
         }
 
         .product-category {
             font-size: 0.75rem;
-            color: #b2916e;
+            color: var(--holiday-red);
             text-transform: uppercase;
             letter-spacing: 0.4px;
+            font-weight: 600;
         }
 
         .price-row {
@@ -364,12 +372,12 @@
         .current-price {
             font-weight: 800;
             font-size: 1.3rem;
-            color: #2c2418;
+            color: var(--evergreen);
         }
 
         .old-price {
             text-decoration: line-through;
-            color: #a6907a;
+            color: #a58e72;
             font-size: 0.85rem;
         }
 
@@ -378,7 +386,7 @@
             align-items: center;
             gap: 6px;
             font-size: 0.8rem;
-            color: #f3b15a;
+            color: var(--gold-accent);
         }
 
         .product-footer {
@@ -388,7 +396,7 @@
         }
 
         .add-cart {
-            background: var(--deep-wood);
+            background: var(--evergreen);
             border: none;
             color: white;
             flex: 1;
@@ -399,18 +407,28 @@
             transition: 0.2s;
         }
 
+        .add-cart:hover {
+            background: var(--forest-green);
+        }
+
         .wishlist {
-            background: #fef3ea;
-            border: none;
+            background: #fef1ea;
+            border: 1px solid #f0dbcf;
             width: 40px;
             border-radius: 40px;
             cursor: pointer;
             transition: 0.2s;
+            color: var(--holiday-red);
         }
 
-        /* flash sale (traditional feel) */
+        .wishlist:hover {
+            background: #ffe3db;
+            color: var(--deep-red);
+        }
+
+        /* flash sale - festive red green */
         .flash-sale {
-            background: #2a241e;
+            background: linear-gradient(135deg, #2b4827 0%, #1d381a 100%);
             border-radius: 44px;
             padding: 32px;
             margin: 48px 0;
@@ -418,20 +436,17 @@
             flex-wrap: wrap;
             align-items: center;
             gap: 32px;
-            color: #fcf6ef;
-        }
-
-        .sale-img {
-            flex: 1;
-            border-radius: 32px;
-            overflow: hidden;
+            color: #fff6e8;
+            border: 1px solid #dbb042;
         }
 
         .sale-img img {
             width: 100%;
             height: 280px;
             object-fit: cover;
+            border-radius: 32px;
             display: block;
+            border: 2px solid var(--gold-accent);
         }
 
         .sale-content {
@@ -439,13 +454,14 @@
         }
 
         .sale-tag {
-            background: #c9a87b;
+            background: var(--holiday-red);
             display: inline-block;
-            padding: 4px 12px;
+            padding: 4px 14px;
             border-radius: 40px;
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             font-weight: bold;
-            color: #241f1a;
+            color: white;
+            letter-spacing: 0.5px;
         }
 
         .timer {
@@ -455,35 +471,28 @@
         }
 
         .time-block {
-            background: #00000030;
-            backdrop-filter: blur(4px);
-            background: #fefaf5;
-            color: #2c2418;
+            background: #fef7e8;
+            color: var(--evergreen);
             padding: 10px 16px;
             border-radius: 20px;
             text-align: center;
             min-width: 70px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .time-number {
             font-size: 1.7rem;
             font-weight: 800;
+            color: var(--holiday-red);
         }
 
-        /* testimonials with vintage card */
+        /* testimonial section red-green accents */
         .testimonial-section {
-            background: #faf3ea;
+            background: #f9f4ea;
             border-radius: 48px;
             padding: 40px 20px;
             margin: 32px 0;
-        }
-
-        .testimonial-grid {
-            display: flex;
-            gap: 28px;
-            overflow-x: auto;
-            padding: 12px 4px;
-            scrollbar-width: thin;
+            border: 1px solid #e5d9ca;
         }
 
         .test-card {
@@ -492,33 +501,57 @@
             padding: 24px;
             min-width: 300px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.02);
-            border: 1px solid #e4d5c4;
+            border-left: 6px solid var(--holiday-red);
+            border-right: 1px solid #e4d5c4;
         }
 
         /* newsletter */
         .newsletter-card {
-            background: linear-gradient(115deg, #e9dfd1 0%, #f1e7db 100%);
+            background: linear-gradient(115deg, #fff1e0 0%, #eef4e6 100%);
             border-radius: 40px;
             padding: 48px 28px;
             text-align: center;
+            border: 1px solid var(--gold-accent);
         }
 
         .newsletter-card input {
             padding: 14px 20px;
             border-radius: 60px;
-            border: none;
+            border: 1px solid #d1c0ab;
             width: 280px;
             max-width: 80%;
             margin-right: 10px;
             font-family: inherit;
         }
 
-        /* footer */
+        .newsletter-card button {
+            background: var(--holiday-red);
+        }
+
+        .newsletter-card button:hover {
+            background: var(--deep-red);
+        }
+
+        /* footer with green */
         footer {
-            background: #f5ede4;
+            background: #1f3a1c;
             margin-top: 48px;
             padding: 48px 0 32px;
             border-radius: 48px 48px 0 0;
+            color: #fbf5e8;
+        }
+
+        footer .logo {
+            color: #fceeca;
+        }
+
+        footer .logo span {
+            color: var(--gold-accent);
+        }
+
+        footer h4 {
+            color: var(--gold-accent);
+            margin-bottom: 12px;
         }
 
         @media (max-width: 900px) {
@@ -551,7 +584,7 @@
                 grid-template-columns: 1fr;
             }
         }
-        /* mobile menu */
+
         .mobile-nav-panel {
             display: none;
             background: white;
@@ -568,19 +601,22 @@
         .mobile-nav-panel a {
             text-decoration: none;
             font-weight: 500;
-            color: #2e241b;
+            color: var(--evergreen);
+        }
+        .red-dot {
+            background: var(--holiday-red);
         }
     </style>
 </head>
 <body>
 <div class="top-bar">
-    ✨ FREE SHIPPING ON ORDERS $75+ | 30-DAY RETURNS ✨
+    🎄 HOLIDAY RED & GREEN EDIT | FREE GIFT WRAPPING + 25% OFF SITEWIDE 🎄
 </div>
 <header>
     <div class="container header-inner">
         <div style="display: flex; align-items: center; gap: 15px;">
             <button class="mobile-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
-            <div class="logo">Emporium<span> & Co.</span></div>
+            <div class="logo">Emporium<span> • Rouge & Vert</span></div>
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -608,20 +644,20 @@
 </header>
 
 <main>
-    <!-- Hero section with traditional overview -->
+    <!-- Hero section -->
     <div class="hero">
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="hero-badge"><i class="fas fa-feather-alt"></i>  Heritage since 2025</span>
-                <h1>Timeless Craft,<br>Modern Soul</h1>
-                <p>Discover heirloom-quality pieces — from artisan accessories to everyday essentials. curated with warmth and authenticity.</p>
+                <span class="hero-badge"><i class="fas fa-leaf"></i>  Holiday Capsule</span>
+                <h1>Scarlet & Evergreen,<br>Timeless Elegance</h1>
+                <p>Embrace the season's finest — artisanal pieces in rich burgundy, forest hues, and gold accents. Heirloom quality with a festive heart.</p>
                 <div class="btn-group">
-                    <button class="btn-primary" id="shopHeroBtn">Explore Collection →</button>
-                    <button class="btn-outline" id="storyBtn">Our Story</button>
+                    <button class="btn-primary" id="shopHeroBtn">Shop Holiday Edit →</button>
+                    <button class="btn-outline" id="storyBtn">Our Legacy</button>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80" alt="Traditional elegance">
+                <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?auto=format&fit=crop&w=800&q=80" alt="Red and green traditional decor">
             </div>
         </div>
     </div>
@@ -629,62 +665,60 @@
     <div class="container">
         <!-- Categories -->
         <div class="section-head">
-            <h2>Browse by Tradition</h2>
+            <h2>Gift in Colour</h2>
             <div class="divider"></div>
-            <p>timeless collections inspired by artisanal heritage</p>
+            <p>red & green inspiration across every tradition</p>
         </div>
         <div class="categories-grid" id="categoriesContainer"></div>
 
-        <!-- Trending products -->
+        <!-- Editor's pick -->
         <div class="section-head" style="margin-top: 48px;">
-            <h2>Editor's Pick</h2>
+            <h2>Signature Selections</h2>
             <div class="divider"></div>
-            <p>curated for the modern connoisseur</p>
+            <p>curated for the festive season</p>
         </div>
         <div class="products-grid" id="productsGrid"></div>
 
-        <!-- Flash Sale with countdown -->
+        <!-- Flash Sale red-green vibe -->
         <div id="deals-section">
             <div class="flash-sale">
                 <div class="sale-img">
-                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5f6e6d?auto=format&fit=crop&w=800&q=80" alt="Limited edition">
+                    <img src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?auto=format&fit=crop&w=800&q=80" alt="Red leather accessory">
                 </div>
                 <div class="sale-content">
-                    <span class="sale-tag"><i class="fas fa-fire"></i> FLASH SALE</span>
-                    <h2 style="color: #fef3e2; margin-top: 12px;">Artisan Leather Collection</h2>
-                    <p>Handcrafted leather bags & accessories — up to 35% off. Only today.</p>
+                    <span class="sale-tag"><i class="fas fa-gift"></i> CRIMSON & PINE DEAL</span>
+                    <h2 style="color: #ffe3b2; margin-top: 12px;">Holiday Leather & Velvet</h2>
+                    <p>Handcrafted burgundy satchels & forest-green accessories — up to 40% off. Limited festive stock.</p>
                     <div class="timer" id="dealTimer">
                         <div class="time-block"><div class="time-number" id="days">00</div><div>Days</div></div>
                         <div class="time-block"><div class="time-number" id="hours">00</div><div>Hours</div></div>
                         <div class="time-block"><div class="time-number" id="minutes">00</div><div>Mins</div></div>
                         <div class="time-block"><div class="time-number" id="seconds">00</div><div>Secs</div></div>
                     </div>
-                    <div style="margin: 20px 0 0;"><span style="font-size: 1.9rem; font-weight: 800;">$189</span> <span style="text-decoration:line-through; opacity:0.7;">$289</span> <span style="background:#c9a87b; padding:4px 10px; border-radius:60px; margin-left:10px;">-35%</span></div>
-                    <button class="btn-primary" id="flashDealBtn" style="margin-top: 24px; background: #dbb47a; color:#2a241e;">Grab Deal <i class="fas fa-arrow-right"></i></button>
+                    <div style="margin: 20px 0 0;"><span style="font-size: 1.9rem; font-weight: 800;">$169</span> <span style="text-decoration:line-through; opacity:0.7;">$279</span> <span style="background:var(--holiday-red); padding:4px 10px; border-radius:60px; margin-left:10px;">-40%</span></div>
+                    <button class="btn-primary" id="flashDealBtn" style="margin-top: 24px; background: var(--holiday-red); color: white;">Grab Deal →</button>
                 </div>
             </div>
         </div>
 
-        <!-- Testimonials vintage style -->
+        <!-- Testimonials -->
         <div class="testimonial-section">
             <div class="section-head">
-                <h2>Words of Warmth</h2>
+                <h2>Joyful Reviews</h2>
                 <div class="divider"></div>
-                <p>from our cherished community</p>
+                <p>our community loves the festive spirit</p>
             </div>
-            <div class="testimonial-grid" id="testimonialList">
-                <!-- dynamic testimonials added via js -->
-            </div>
+            <div class="testimonial-grid" id="testimonialList"></div>
         </div>
 
         <!-- Newsletter -->
         <div class="newsletter-card">
-            <i class="fas fa-envelope-open-text" style="font-size: 2.5rem; color:#a88458;"></i>
-            <h3 style="margin: 12px 0;">Join the Inner Circle</h3>
-            <p>Get early access to artisan drops, exclusive offers and style notes.</p>
+            <i class="fas fa-envelope-open-text" style="font-size: 2.5rem; color: var(--holiday-red);"></i>
+            <h3 style="margin: 12px 0; color: var(--evergreen);">Join the Holiday Circle</h3>
+            <p>Get early access to red & green collections, exclusive offers, and style notes.</p>
             <form id="newsletterSubscribe" style="margin-top: 20px;">
                 <input type="email" placeholder="Your email address" id="newsEmail" required>
-                <button class="btn-primary" style="background: #3e2c1f;">Subscribe</button>
+                <button class="btn-primary" style="background: var(--holiday-red);">Subscribe</button>
             </form>
             <div id="newsMsg" style="margin-top: 12px; font-size: 0.85rem;"></div>
         </div>
@@ -693,32 +727,32 @@
 
 <footer>
     <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px;">
-        <div><div class="logo" style="font-size:1.6rem;">Emporium<span> & Co.</span></div><p style="margin-top: 12px; max-width: 260px;">Bringing you heirloom quality and soulful design since 2025.</p></div>
-        <div><h4>Explore</h4><p>New Arrivals<br>Gift Guide<br>Journal</p></div>
+        <div><div class="logo" style="font-size:1.6rem;">Emporium<span> Rouge & Vert</span></div><p style="margin-top: 12px; max-width: 260px;">Festive heirlooms, modern spirit. Celebrating red & green traditions.</p></div>
+        <div><h4>Explore</h4><p>Gift Guide<br>Holiday Edit<br>Journal</p></div>
         <div><h4>Support</h4><p>Contact Us<br>Returns<br>FAQ</p></div>
         <div><h4>Connect</h4><p><i class="fab fa-instagram"></i> Instagram<br><i class="fab fa-pinterest"></i> Pinterest</p></div>
     </div>
-    <div class="container" style="text-align: center; margin-top: 40px; font-size: 0.75rem;">© 2025 Emporium & Co. — Timeless Elegance</div>
+    <div class="container" style="text-align: center; margin-top: 40px; font-size: 0.75rem;">© 2025 Emporium & Co. — Crimson & Evergreen Collection</div>
 </footer>
 
 <script>
-    // -------- product and category data (traditional-inspired) --------
+    // product & category data (red-green festive theme)
     const categoriesData = [
-        { id: "leather", name: "Leather Goods", icon: "fas fa-briefcase" },
-        { id: "ceramics", name: "Ceramics", icon: "fas fa-mug-hot" },
-        { id: "textiles", name: "Textiles", icon: "fas fa-tshirt" },
-        { id: "jewelry", name: "Heirloom Jewelry", icon: "fas fa-gem" },
-        { id: "furniture", name: "Woodcraft", icon: "fas fa-couch" },
-        { id: "apothecary", name: "Apothecary", icon: "fas fa-seedling" }
+        { id: "leather", name: "Burgundy Leather", icon: "fas fa-briefcase" },
+        { id: "ceramics", name: "Forest Ceramics", icon: "fas fa-mug-hot" },
+        { id: "textiles", name: "Velvet & Linen", icon: "fas fa-tshirt" },
+        { id: "jewelry", name: "Garnet Jewels", icon: "fas fa-gem" },
+        { id: "furniture", name: "Walnut & Pine", icon: "fas fa-couch" },
+        { id: "apothecary", name: "Pine & Cedar", icon: "fas fa-seedling" }
     ];
 
     const productsList = [
-        { id: 101, title: "Heritage Leather Satchel", price: 249, oldPrice: 389, rating: 5, reviews: 124, img: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80", category: "leather", badge: "Bestseller" },
-        { id: 102, title: "Hand-Thrown Stoneware Mug", price: 48, oldPrice: 72, rating: 5, reviews: 87, img: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=600&q=80", category: "ceramics", badge: "Artisan" },
-        { id: 103, title: "Linen Blend Tunic", price: 89, rating: 4, reviews: 43, img: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=600&q=80", category: "textiles" },
-        { id: 104, title: "Vintage Pearl Necklace", price: 159, oldPrice: 210, rating: 5, reviews: 62, img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80", category: "jewelry" },
-        { id: 105, title: "Walnut Serving Board", price: 79, rating: 5, reviews: 34, img: "https://images.unsplash.com/photo-1603204034169-1b0b8a9ea2db?auto=format&fit=crop&w=600&q=80", category: "furniture" },
-        { id: 106, title: "Botanical Candle Set", price: 55, oldPrice: 84, rating: 4, reviews: 101, img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80", category: "apothecary" }
+        { id: 101, title: "Crimson Leather Satchel", price: 229, oldPrice: 399, rating: 5, reviews: 98, img: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=600&q=80", category: "leather", badge: "Holiday Hero" },
+        { id: 102, title: "Evergreen Stoneware Mug", price: 42, oldPrice: 68, rating: 5, reviews: 112, img: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=600&q=80", category: "ceramics", badge: "Artisan" },
+        { id: 103, title: "Forest Velvet Tunic", price: 99, rating: 4, reviews: 67, img: "https://images.unsplash.com/photo-1598550886630-8e863c0d8fce?auto=format&fit=crop&w=600&q=80", category: "textiles" },
+        { id: 104, title: "Garnet & Pearl Necklace", price: 179, oldPrice: 249, rating: 5, reviews: 84, img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80", category: "jewelry" },
+        { id: 105, title: "Pine Wood Serving Board", price: 85, rating: 5, reviews: 43, img: "https://images.unsplash.com/photo-1603204034169-1b0b8a9ea2db?auto=format&fit=crop&w=600&q=80", category: "furniture" },
+        { id: 106, title: "Cedar & Cinnamon Candle Set", price: 58, oldPrice: 89, rating: 5, reviews: 129, img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80", category: "apothecary" }
     ];
 
     let cartItemCount = 0;
@@ -730,8 +764,8 @@
             cartItemCount++;
             updateCartUI();
             const btn = document.querySelector(`.add-cart[data-id='${productId}']`);
-            if(btn) { let orig = btn.innerHTML; btn.innerHTML = "✓ Added"; setTimeout(()=> btn.innerHTML = orig, 1000); }
-            else alert(`Added ${product.title} to cart`);
+            if(btn) { let orig = btn.innerHTML; btn.innerHTML = "✓ Added!"; setTimeout(()=> btn.innerHTML = orig, 1000); }
+            else alert(`🎁 Added ${product.title} to cart`);
         } else { cartItemCount++; updateCartUI(); }
     }
 
@@ -741,13 +775,17 @@
             <div class="cat-card" data-cat="${cat.name}">
                 <i class="${cat.icon}"></i>
                 <h4>${cat.name}</h4>
-                <p style="font-size:0.7rem; margin-top:6px;">shop now →</p>
+                <p style="font-size:0.7rem; margin-top:6px;">explore →</p>
             </div>
         `).join('');
         document.querySelectorAll('.cat-card').forEach(card => {
-            card.addEventListener('click', (e) => {
+            card.addEventListener('click', () => {
                 const catName = card.getAttribute('data-cat');
-                const filtered = productsList.filter(p => p.category.toLowerCase() === catName.toLowerCase());
+                let filtered = productsList.filter(p => {
+                    const mapCat = { "Burgundy Leather":"leather", "Forest Ceramics":"ceramics", "Velvet & Linen":"textiles", "Garnet Jewels":"jewelry", "Walnut & Pine":"furniture", "Pine & Cedar":"apothecary" };
+                    const expected = mapCat[catName];
+                    return p.category === expected;
+                });
                 renderProducts(filtered.length ? filtered : productsList);
                 document.getElementById('productsGrid').scrollIntoView({ behavior: 'smooth' });
             });
@@ -761,7 +799,7 @@
             <div class="product-card">
                 <img class="product-img" src="${p.img}" alt="${p.title}" loading="lazy">
                 <div class="product-info">
-                    <div class="product-category">${p.category}</div>
+                    <div class="product-category">${p.category === 'leather' ? 'Burgundy Leather' : p.category}</div>
                     <div class="product-title">${p.title}</div>
                     <div class="price-row">
                         <span class="current-price">$${p.price}</span>
@@ -783,11 +821,10 @@
         });
     }
 
-    // testimonials
     const testimonials = [
-        { name: "Eleanor R.", text: "The leather satchel is a masterpiece — impeccable craftsmanship and timeless design.", stars: 5, imgPlaceholder: "E" },
-        { name: "Matthias K.", text: "I love the ceramics collection; each piece feels like a work of art. Will order again!", stars: 5 },
-        { name: "Clara B.", text: "Shipping was fast and the packaging felt like opening a gift. Highly recommend.", stars: 4 }
+        { name: "Genevieve L.", text: "The crimson satchel is stunning! Perfect holiday red and impeccable leather.", stars: 5 },
+        { name: "Oliver W.", text: "Forest ceramics bring so much warmth. Love the green glaze!", stars: 5 },
+        { name: "Sophia R.", text: "Festive packaging & gorgeous quality. The red & green collection is chef's kiss.", stars: 5 }
     ];
     function renderTestimonials() {
         const tContainer = document.getElementById('testimonialList');
@@ -800,7 +837,6 @@
         `).join('');
     }
 
-    // countdown timer (2 days from now)
     function startDealCountdown() {
         const targetDate = new Date();
         targetDate.setDate(targetDate.getDate() + 2);
@@ -825,18 +861,17 @@
         update(); setInterval(update, 1000);
     }
 
-    // event listeners and UI init
     document.getElementById('shopHeroBtn').addEventListener('click', () => {
         document.getElementById('productsGrid').scrollIntoView({ behavior: 'smooth' });
     });
-    document.getElementById('storyBtn').addEventListener('click', () => alert("Emporium & Co. was born from a love for artisan traditions and modern storytelling."));
+    document.getElementById('storyBtn').addEventListener('click', () => alert("Emporium & Co. — inspired by crimson poinsettias and ancient evergreen forests, celebrating festive artistry."));
     document.getElementById('flashDealBtn').addEventListener('click', () => {
         cartItemCount++;
         updateCartUI();
-        alert("Special deal added to cart! Limited stock.");
+        alert("🔥 Holiday flash deal added! Limited stock in red & green collection.");
     });
-    document.getElementById('cartIconBtn').addEventListener('click', () => alert(`You have ${cartItemCount} item(s) in your cart. Proceed to checkout (demo).`));
-    document.getElementById('searchIconBtn').addEventListener('click', () => alert("Wishlist feature: save your favorite pieces."));
+    document.getElementById('cartIconBtn').addEventListener('click', () => alert(`🛍️ Your cart has ${cartItemCount} festive item(s). Checkout demo ready.`));
+    document.getElementById('searchIconBtn').addEventListener('click', () => alert("❤️ Save your favorite red & green picks to wishlist."));
     const mobileBtn = document.getElementById('mobileMenuBtn');
     const mobilePanel = document.getElementById('mobileNavPanel');
     mobileBtn.addEventListener('click', () => {
@@ -847,12 +882,12 @@
         const email = document.getElementById('newsEmail').value;
         const msgDiv = document.getElementById('newsMsg');
         if(email && email.includes('@')) {
-            msgDiv.innerHTML = "✨ Thanks! You’re now part of our inner circle ✨";
-            msgDiv.style.color = "#4f6d5c";
+            msgDiv.innerHTML = "🎄 Welcome! You’ll receive our holiday red & green edit first 🎄";
+            msgDiv.style.color = "#1e4620";
             document.getElementById('newsEmail').value = '';
         } else {
             msgDiv.innerHTML = "Please enter a valid email address.";
-            msgDiv.style.color = "#b1624b";
+            msgDiv.style.color = "#b63a2c";
         }
         setTimeout(() => { msgDiv.innerHTML = ''; }, 3000);
     });
